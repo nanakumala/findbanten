@@ -51,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="I Putu Kadek Nyoman"
-                android:textColor="#01579B"
+                android:textColor="#000"
                 android:textSize="15sp"
                 />
             <TextView
@@ -66,7 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="putukadek123@gmail.com"
-                android:textColor="#01579B"
+                android:textColor="#000"
                 android:textSize="15sp"
                 />
             <TextView
@@ -81,7 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="081999542322"
-                android:textColor="#01579B"
+                android:textColor="#000"
                 android:textSize="15sp"
                 />
         </LinearLayout>
@@ -192,4 +192,13 @@
         </LinearLayout>
     </LinearLayout>
 
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bnve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:itemTextColor="@drawable/bottom_nav_item"
+        app:itemIconTint="@drawable/bottom_nav_item"
+        app:menu="@menu/bottom_nav_view"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
