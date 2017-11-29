@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.nkumala.findbanten.DetailActivity">
-
-</android.support.constraint.ConstraintLayout>
+    tools:context="com.example.nkumala.findbanten.DetailActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#d1d1d1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#90A4AE"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_detail_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bu Nana"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/txt_detail_telepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="082298402842"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/txt_detail_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jalan Mohamadyah"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bnv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:itemTextColor="@android:color/white"
+        app:itemIconTint="@android:color/white"
+        app:menu="@menu/detail_toko"/>
+</LinearLayout>

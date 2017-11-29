@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_call" android:title="Call"  android:icon="@drawable/ic_phone"/>
+    <item android:id="@+id/menu_message" android:title="Message" android:icon="@drawable/ic_email"/>
+    <item android:id="@+id/menu_location" android:title="Location" android:icon="@drawable/ic_map"/>
+</menu>
