@@ -1,144 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.nkumala.findbanten.MainActivity"
-    android:background="@android:color/white"
-    android:orientation="vertical"
-    android:weightSum="1">
+    tools:context="com.example.nkumala.findbanten.MainActivity">
 
-    <ImageView
-        android:layout_marginTop="70dp"
+    <FrameLayout
+        android:id="@+id/frame_layout_main"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="match_parent"/>
 
-        android:adjustViewBounds="true"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_margin="20dp"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/logoprofile" />
-        <EditText
-            android:layout_gravity="center_vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:hint="Username or email"/>
-
-    </LinearLayout>
-    <LinearLayout
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bnve"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginRight="50dp"
-        android:layout_marginLeft="50dp">
-        <ImageView
-            android:layout_margin="20dp"
-            android:id="@+id/imageView"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/lockedprofile" />
-        <EditText
-            android:layout_gravity="center_vertical"
-            android:id="@+id/editText2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:hint="Password"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:textSize="15dp"
-            android:text="Register"/>
+        android:background="@color/colorPrimary"
+        app:itemTextColor="@drawable/bottom_nav_item"
+        app:itemIconTint="@drawable/bottom_nav_item"
+        app:menu="@menu/bottom_nav_view"
+        android:layout_alignParentBottom="true"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="50dp"
-            android:layout_marginLeft="12dp"
-            android:text="Forgot Password? Click Here"
-            android:textSize="15dp"
-            />
-    </LinearLayout>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorAccent"
-        android:layout_marginTop="20dp"
-        android:text="Login"
-        android:textAllCaps="false"
-        android:layout_gravity="center"
-        android:background="#893030"/>
-
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        >
-        <ImageView
-            android:layout_width="115dp"
-            android:layout_height="10dp"
-            android:layout_gravity="center"
-            android:src="@drawable/horizontalline"/>
-
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="or"/>
-
-        <ImageView
-            android:layout_width="115dp"
-            android:layout_height="10dp"
-            android:layout_gravity="center"
-            android:src="@drawable/horizontalline"/>
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:textSize="15dp"
-        android:text="Login with :"/>
-
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-        <ImageView
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/fb"/>
-        <ImageView
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/google"/>
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
