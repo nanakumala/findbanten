@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void init(){
         bottomNavigationViewEx=findViewById(R.id.bnve);
+        bottomNavigationViewEx.enableAnimation(false);
+        bottomNavigationViewEx.enableShiftingMode(false);
+        bottomNavigationViewEx.enableItemShiftingMode(false);
+
         bottomNavigationViewEx.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
