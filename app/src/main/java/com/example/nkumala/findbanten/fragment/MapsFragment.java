@@ -9,10 +9,6 @@ import android.view.ViewGroup;
 
 import com.example.nkumala.findbanten.R;
 
-/**
- * Created by Urip on 11/28/2017.
- */
-
 public class MapsFragment extends Fragment{
     public MapsFragment() {
     }

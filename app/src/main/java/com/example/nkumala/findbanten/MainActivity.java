@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.nkumala.findbanten.fragment.HomeFragment;
@@ -11,6 +13,7 @@ import com.example.nkumala.findbanten.fragment.MapsFragment;
 import com.example.nkumala.findbanten.fragment.ProfileFragment;
 import com.example.nkumala.findbanten.fragment.SearchFragment;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationViewEx bottomNavigationViewEx;
@@ -24,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 .commit();
         init();
     }
+
 
     private void init(){
         bottomNavigationViewEx=findViewById(R.id.bnve);

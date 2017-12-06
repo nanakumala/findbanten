@@ -18,9 +18,7 @@ import com.example.nkumala.findbanten.model.TokoModel;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Urip on 11/28/2017.
- */
+
 
 public class HomeFragment extends Fragment{
 
