@@ -14,9 +14,6 @@ import com.example.nkumala.findbanten.model.TokoModel;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Urip on 11/30/2017.
- */
 
 public class TokoAdapter extends RecyclerView.Adapter<TokoAdapter.ViewHolder>{
     List<TokoModel> tokoModelList= new ArrayList<>();
