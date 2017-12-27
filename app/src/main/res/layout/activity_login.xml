@@ -29,12 +29,13 @@
             android:layout_height="20dp"
             android:src="@drawable/logoprofile" />
         <EditText
+            android:id="@+id/etemaillogin"
             android:layout_gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:hint="Username or email"/>
+            android:hint="Email"/>
 
     </LinearLayout>
     <LinearLayout
@@ -51,37 +52,27 @@
             android:src="@drawable/lockedprofile" />
         <EditText
             android:layout_gravity="center_vertical"
-            android:id="@+id/editText2"
+            android:id="@+id/etpasslogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textEmailAddress"
             android:hint="Password"/>
     </LinearLayout>
-    <LinearLayout
+    <TextView
+        android:id="@+id/txt_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:textSize="15dp"
-            android:text="Register"/>
+        android:layout_gravity="center"
+        android:text="Register"
+        android:textSize="15dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="50dp"
-            android:layout_marginLeft="12dp"
-            android:text="Forgot Password? Click Here"
-            android:textSize="15dp"
-            />
-    </LinearLayout>
+
     <Button
+        android:id="@+id/btnlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorAccent"
+        android:textColor="#fff"
         android:layout_marginTop="20dp"
         android:text="Login"
         android:textAllCaps="false"

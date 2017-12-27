@@ -2,6 +2,7 @@ package com.example.nkumala.findbanten.api;
 
 import com.example.nkumala.findbanten.model.BarangModel;
 import com.example.nkumala.findbanten.model.TokoModel;
+import com.example.nkumala.findbanten.model.UserModel;
 
 import org.json.JSONObject;
 
@@ -20,10 +21,10 @@ import retrofit2.http.Query;
 
 public interface ApiInterface {
     @POST("login")
-    Call<JSONObject> login(@Query("email") String email, @Query("password") String password);
+    Call<UserModel> login(@Query("email") String email, @Query("password") String password);
 
-    @GET("register")
-    Call<JSONObject> register(@Query("nama") String nama,
+    @POST("register")
+    Call<UserModel> register(@Query("nama") String nama,
                               @Query("jenis_kelamin") String jenis_kelamin,
                               @Query("no_telp") String no_telp,
                               @Query("email") String email,

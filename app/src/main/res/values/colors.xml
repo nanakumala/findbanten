@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#171616</color>
     <color name="colorPrimaryDark">#893030</color>
-    <color name="colorAccent">#fff</color>
+    <color name="colorAccent">#000</color>
     <color name="birubasic">#b0d6ff</color>
+    <color name="white">#fff</color>
 </resources>

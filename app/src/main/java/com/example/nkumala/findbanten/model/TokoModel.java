@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 public class TokoModel implements Serializable{
     private int id_toko;
-    private String nama_toko, alamat, no_telp;
+    private String nama_toko, alamat, no_telp, gambar_toko;
     private double lat, lng;
 //
 //    public TokoModel(int id_toko, String nama_toko, String alamat, String no_telp ) {
@@ -64,5 +64,13 @@ public class TokoModel implements Serializable{
 
     public void setLng(double lng) {
         this.lng = lng;
+    }
+
+    public String getGambar_toko() {
+        return gambar_toko;
+    }
+
+    public void setGambar_toko_telp(String gambar_toko) {
+        this.gambar_toko = gambar_toko;
     }
 }

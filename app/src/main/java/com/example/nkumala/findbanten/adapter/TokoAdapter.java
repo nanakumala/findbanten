@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.nkumala.findbanten.R;
 import com.example.nkumala.findbanten.model.TokoModel;
 
@@ -19,7 +20,7 @@ public class TokoAdapter extends RecyclerView.Adapter<TokoAdapter.ViewHolder>{
     List<TokoModel> tokoModelList= new ArrayList<>();
     Context context;
     OnClickListener mOnClickListener;
-
+    String IMAGE_URL="http://192.168.43.226:8000/images/toko/";
     public interface OnClickListener{
         public void onItemClick(int position);
     }
@@ -40,7 +41,8 @@ public class TokoAdapter extends RecyclerView.Adapter<TokoAdapter.ViewHolder>{
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         TokoModel tokoModel= tokoModelList.get(position);
-        holder.txtName.setText(tokoModel.getNama());
+        holder.txtName.setText(tokoModel.getNama_toko());
+        Glide.with(this.context).load(IMAGE_URL+tokoModel.getGambar_toko()).into(holder.imgToko);
     }
 
     @Override
