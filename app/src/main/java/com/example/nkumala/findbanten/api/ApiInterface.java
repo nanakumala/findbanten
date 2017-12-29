@@ -33,6 +33,9 @@ public interface ApiInterface {
     @GET("toko")
     Call<List<TokoModel>> getToko();
 
+    @GET("toko/{id_toko}")
+    Call<TokoModel> getDetailToko(@Path("id_toko") int id_toko);
+
     @GET("barang/{id_toko}")
     Call<List<BarangModel>> getBarang(@Path("id_toko") int id_toko);
 

@@ -88,7 +88,7 @@ public class HomeFragment extends Fragment{
             public void onItemClick(int position) {
                 TokoModel tokoModel=listToko.get(position);
                 Intent intent= new Intent(getContext(), DetailActivity.class);
-                intent.putExtra(DetailActivity.KEY_TOKO,tokoModel);
+                intent.putExtra(DetailActivity.KEY_TOKO,tokoModel.getId());
                 startActivity(intent);
             }
         });

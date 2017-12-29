@@ -8,6 +8,7 @@
     tools:context="com.example.nkumala.findbanten.DetailActivity"
     android:orientation="vertical">
     <ImageView
+        android:id="@+id/img_detail"
         android:layout_width="match_parent"
         android:layout_height="170dp"
         android:background="#d1d1d1"/>
@@ -47,4 +48,8 @@
         app:itemTextColor="@android:color/white"
         app:itemIconTint="@android:color/white"
         app:menu="@menu/detail_toko"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_barang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </LinearLayout>

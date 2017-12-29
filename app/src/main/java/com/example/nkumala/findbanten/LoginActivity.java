@@ -37,11 +37,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mySharedPreference= new MySharedPreference(this);
-        if (mySharedPreference.getIsLogin()){
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-            finish();
-        }
         setContentView(R.layout.activity_login);
         init();
 
@@ -98,6 +93,7 @@ public class LoginActivity extends AppCompatActivity {
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
                         finish();
+//                        Toast.makeText(LoginActivity.this, mySharedPreference.getJenisKelamin(), Toast.LENGTH_SHORT).show();
                     }else{
                         Toast.makeText(LoginActivity.this, "Email atau password salah", Toast.LENGTH_SHORT).show();
                     }
